@@ -11,14 +11,14 @@ export default function ListUser() {
   }, []);
 
   function getUsers() {
-    axios.get("http://localhost/gyak/users/").then(function (response) {
+    axios.get("http://localhost/api/users/").then(function (response) {
       setUsers(response.data);
     });
   }
 
   //10 új felhasználó hozzáadása
   function addDataToDb() {
-    axios.post("http://localhost/gyak/users/add").then(function (response) {
+    axios.post("http://localhost/api/users/add").then(function (response) {
       console.log(response.data);
       navigate(0);
     });
@@ -27,7 +27,7 @@ export default function ListUser() {
   return (
     <div className="container my-5">
       <button type="button" className="btn btn-secondary" onClick={addDataToDb}>
-        Add new 10 users
+        Add 10 new users
       </button>
       <table className="table table-striped">
         <thead>
