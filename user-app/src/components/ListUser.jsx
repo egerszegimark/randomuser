@@ -32,16 +32,16 @@ export default function ListUser() {
       <table className="table table-striped">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Gender</th>
-            <th>City</th>
-            <th>Country</th>
-            <th>Email</th>
-            <th>Salt</th>
-            <th>Sha256</th>
-            <th>Picture</th>
+            <th className="h6">ID</th>
+            <th className="h6">Name</th>
+            <th className="h6">Age</th>
+            <th className="h6">Gender</th>
+            <th className="h6">City</th>
+            <th className="h6">Country</th>
+            <th className="h6">Email</th>
+            <th className="h6">Salt</th>
+            <th className="h6">Sha256</th>
+            <th className="h6">Picture</th>
           </tr>
         </thead>
         <tbody className="table-group-divider">
